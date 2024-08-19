@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaeem Patel Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Zaeem Patel</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Zaeem Patel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/mepic.jpg" alt="Zaeem Patel profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Zaeem Patel</h1>
+        <p class="section__text__p2" style="color: #0BDA51;">Aspiring Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Zaeem Patel CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+        </button>        
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/zaeem-patel-8a2835246/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ZAEEM-PATEL'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/abtme.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Co-Founder at PatChi Mobile <br />2024 - Present</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. in Computer and Information Science<br />IIE Varsity College</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I'm Zaeem, an aspiring software developer with a strong foundation in
+              computer science. I co-founded PatChi Mobile, where I manage the online sales platform, optimize stock levels, and reduce costs.
+              I have hands-on experience in programming, software development, and cloud computing, and I'm passionate about technology and
+              innovation. My goal is to grow in the IT sector, developing expertise in software engineering, cloud solutions, and emerging
+              technologies like AI.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kotlin</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development & Cloud Computing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.NET MVC</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Azure</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="education">
+        <p class="section__text__p1">My Academic Journey</p>
+        <h1 class="title">Education</h1>
+        <div class="education-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/vclogo.png"
+                  alt="Varsity College Logo"
+                  class="education-img"
+                />
+              </div>
+              <h2 class="experience-sub-title education-title">Bachelor of Computer and Information Science</h2>
+              <p class="education-description">
+                IIE Varsity College, South Africa<br />
+                2021 - 2024
+              </p>
+              <!-- Skills and Areas of Study -->
+              <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Java, C#, Kotlin</li>
+                <li><strong>Web Development:</strong> HTML, CSS, ASP.NET MVC</li>
+                <li><strong>Software Development:</strong> GitHub, Problem-Solving abilities, Critical Thinking</li>
+                <li><strong>Database Management:</strong> SQL, Firebase</li>
+                <li><strong>Cloud Computing:</strong> Microsoft Azure, Firebase</li>
+                <li><strong>Project Management:</strong> Management tools, Agile Methodologies, SDLC, Administrative skills</li>
+                <li><strong>Data Analysis</strong></li>
+                <li><strong>Communication & Teamwork:</strong> Verbal and Written Communication, Computer Literacy</li>
+            </ul>
+            <!-- Button to View Academic Transcript -->
+            <br><br>
+            <a href="./assets/transcriptpic.png" class="btn btn-color-1" target="_blank">View Academic Transcript</a>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/wbhs.jpg"
+                  alt="High School Logo"
+                  class="education-img"
+                />
+              </div>
+              <h2 class="experience-sub-title education-title">National Senior Certificate</h2>
+              <p class="education-description">
+                Westville Boys High School, South Africa<br />
+                2017 - 2021
+              </p>
+              <p class="education-description">
+                Activities and Societies: Tennis, Cricket, Environmental Task Team
+            </p>
+            <p class="education-description">
+                My five years at Westville Boys High School were an incredible journey marked by enjoyment, camaraderie, athletic pursuits, and personal development. From the very start, I reveled in the vibrant atmosphere, formed lifelong bonds with my fellow students, and found joy in every aspect of the high school experience. The strong sense of brotherhood that permeated the campus was a defining aspect, fostering lasting friendships and a profound sense of belonging. Engaging in various sports activities not only enhanced my physical abilities but also instilled important life lessons about teamwork and resilience. Overall, my time at Westville Boys High School was a period of immense personal growth and discovery, setting the stage for a promising future while leaving me with cherished memories of a transformative educational journey.
+            </p>
+            <br><br>
+            <br><br>
+            <a href="./assets/Zaeem NSC.pdf" class="btn btn-color-1" target="_blank">National Senior Certificate</a>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+      <br><br>
+      <br><br>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="patelzaeem25@gmail.com">patelzaeem25@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+                src="./assets/phonelogo.jpg"
+                alt="Phone icon"
+                class="icon contact-icon"
+            />
+            <p><a href="tel:+27608293529">+27 60 829 3529</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Zaeem Patel. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+  </html>
